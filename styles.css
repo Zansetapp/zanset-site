@@ -1,0 +1,45 @@
+
+:root{
+  --brand:#b20a0a;
+  --ink:#111;
+  --soft:#f6f7f9;
+  --line:#e5e7eb;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+.header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:10}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.logo{height:44px;width:auto}
+.nav a{text-decoration:none;color:#222;margin-left:16px;font-weight:600}
+.nav a:hover{opacity:.7}
+.lang-switch button{margin-left:8px;border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 10px;font-weight:600;cursor:pointer}
+.lang-switch button.active{background:var(--brand);color:#fff;border-color:var(--brand)}
+.hero{padding:72px 0;background:linear-gradient(180deg,#fff,var(--soft))}
+.hero h1{font-size:32px;margin:0 0 12px;line-height:1.2}
+.hero p.sub{color:#444;margin:0 0 18px}
+.hero .cta .btn{margin-right:10px}
+.btn{display:inline-block;padding:12px 18px;border-radius:10px;border:1px solid var(--line);text-decoration:none;color:#111;font-weight:700}
+.btn.primary{background:var(--brand);color:#fff;border-color:var(--brand)}
+.hero img{width:100%;border-radius:14px;box-shadow:0 12px 32px rgba(0,0,0,.08);margin-top:20px}
+.section{padding:64px 0}
+.section.alt{background:var(--soft)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:0 8px 22px rgba(0,0,0,.04)}
+.card img{width:100%;border-radius:10px;margin-bottom:10px}
+.form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{display:block;font-weight:600;font-size:14px;color:#222}
+input,textarea{width:100%;margin-top:6px;padding:10px 12px;border-radius:10px;border:1px solid var(--line);font-size:16px}
+footer{padding:30px 0;border-top:1px solid var(--line);background:#fff;color:#555;margin-top:30px}
+.small{font-size:13px;color:#666}
+
+/* Bilingual visibility */
+.lang-en .ht{display:none}
+.lang-ht .en{display:none}
+
+@media (max-width:900px){
+  .two-col{grid-template-columns:1fr}
+  .grid-3{grid-template-columns:1fr}
+  .nav{display:none}
+}
