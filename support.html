@@ -4,10 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ZANSET — Support</title>
+
+  <!-- Style & Script (obligatwa pou lang-switch la mache) -->
   <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+
+  <!-- SEO ti deskripsyon -->
+  <meta name="description" content="ZANSET Support — We’re here to help. Nou la pou ede w nenpòt ki lè.">
+  <meta property="og:title" content="ZANSET — Support">
+  <meta property="og:image" content="assets/hero.jpg">
 </head>
 
 <body>
+  <!-- HEADER / NAV -->
   <header class="header">
     <div class="container header-inner">
       <a href="index.html"><img class="logo" src="assets/zanset-logo.png" alt="ZANSET logo"></a>
@@ -27,33 +36,74 @@
     </div>
   </header>
 
+  <!-- MAIN -->
   <main class="container">
-    <!-- TIT -->
+    <!-- Hero / imaj tèt paj la -->
+    <section class="section">
+      <img src="assets/hero.jpg" alt="" class="hero" />
+    </section>
+
+    <!-- Tit -->
     <h1 data-lang="ht">Sipò ZANSET</h1>
     <h1 data-lang="en">ZANSET Support</h1>
 
-    <!-- DESKRIPSYON KOUT -->
+    <!-- Entwodiksyon kout -->
     <p data-lang="ht">Nou la pou ede w nenpòt ki lè. Chwazi opsyon ki pi pratik pou ou.</p>
     <p data-lang="en">We’re here to help anytime. Choose the option that works best for you.</p>
 
+    <!-- Blòk chanèl sipò yo -->
+    <section class="section cards">
+      <div class="card">
+        <h2 data-lang="ht">Imèl</h2>
+        <h2 data-lang="en">Email</h2>
+        <p data-lang="ht">Ekri nou sou <a href="mailto:support@myzanset.com">support@myzanset.com</a>. Nou reponn rapid.</p>
+        <p data-lang="en">Reach us at <a href="mailto:support@myzanset.com">support@myzanset.com</a>. We reply fast.</p>
+      </div>
+
+      <div class="card">
+        <h2 data-lang="ht">Sant Èd (FAQ)</h2>
+        <h2 data-lang="en">Help Center (FAQ)</h2>
+        <p data-lang="ht">Gade repons rapid pou kesyon komen yo anba a.</p>
+        <p data-lang="en">Find quick answers to common questions below.</p>
+      </div>
+
+      <div class="card">
+        <h2 data-lang="ht">Biznis & Patnè</h2>
+        <h2 data-lang="en">Business & Partners</h2>
+        <p data-lang="ht">Pou patenarya oswa demann biznis, ekri <a href="mailto:partners@myzanset.com">partners@myzanset.com</a>.</p>
+        <p data-lang="en">For partnerships or business inquiries, write <a href="mailto:partners@myzanset.com">partners@myzanset.com</a>.</p>
+      </div>
+    </section>
+
     <!-- FAQ -->
-    <h2 data-lang="ht">Kesyon yo poze souvan (FAQ)</h2>
-    <h2 data-lang="en">Frequently Asked Questions (FAQ)</h2>
-    <ul>
-      <li data-lang="ht"><strong>Kijan pou m kreye yon kont?</strong> Ale sou paj enskripsyon an epi ranpli fòm lan.</li>
-      <li data-lang="en"><strong>How do I create an account?</strong> Go to the sign-up page and fill the form.</li>
+    <section class="section">
+      <h2 data-lang="ht">Kesyon yo poze souvan (FAQ)</h2>
+      <h2 data-lang="en">Frequently Asked Questions (FAQ)</h2>
 
-      <li data-lang="ht"><strong>M bliye modpas mwen.</strong> Peze “Forgot Password” epi swiv etap yo.</li>
-      <li data-lang="en"><strong>I forgot my password.</strong> Click “Forgot Password” and follow the steps.</li>
-    </ul>
+      <details>
+        <summary data-lang="ht"><strong>Kijan pou m kreye yon kont?</strong></summary>
+        <summary data-lang="en"><strong>How do I create an account?</strong></summary>
+        <p data-lang="ht">Ale sou paj enskripsyon an epi ranpli fòm lan. W ap resevwa yon imel verifikasyon.</p>
+        <p data-lang="en">Go to the sign-up page and fill the form. You’ll receive a verification email.</p>
+      </details>
 
-    <!-- KONTAK DIRÈK -->
-    <h2 data-lang="ht">Kontakte nou dirèkteman</h2>
-    <h2 data-lang="en">Contact us directly</h2>
-    <p data-lang="ht">Ekri nou: <a href="mailto:support@myzanset.com">support@myzanset.com</a></p>
-    <p data-lang="en">Write us at: <a href="mailto:support@myzanset.com">support@myzanset.com</a></p>
+      <details>
+        <summary data-lang="ht"><strong>M bliye modpas mwen.</strong></summary>
+        <summary data-lang="en"><strong>I forgot my password.</strong></summary>
+        <p data-lang="ht">Klike “Forgot Password” epi swiv etap yo pou rekipere aksè.</p>
+        <p data-lang="en">Click “Forgot Password” and follow the steps to regain access.</p>
+      </details>
+
+      <details>
+        <summary data-lang="ht"><strong>Kijan pou m kontakte sipò?</strong></summary>
+        <summary data-lang="en"><strong>How can I contact support?</strong></summary>
+        <p data-lang="ht">Pi rapid la se <a href="mailto:support@myzanset.com">support@myzanset.com</a>. Nou disponib Lendi–Vandredi.</p>
+        <p data-lang="en">Fastest is <a href="mailto:support@myzanset.com">support@myzanset.com</a>. We’re available Monday–Friday.</p>
+      </details>
+    </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <p>©️ 2025 ZANSET INC — All rights reserved.</p>
   </footer>
